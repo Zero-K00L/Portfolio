@@ -5,6 +5,7 @@
     --white: #E6E7E9;
     --gray: #838791;
     --gold: #776653;
+    --blue: #0077C8;
 }
 
 html {
@@ -27,7 +28,7 @@ body {
     max-width: 375px;
     height: 780px; */
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     margin: 0 auto;
     position: absolute;
     top: 50%;
@@ -347,6 +348,7 @@ background-image: linear-gradient(45deg,
     border-radius: 10px;
     position: relative;
     color: var(--gray);
+    cursor: pointer;
 }
 
 .project:hover {
@@ -424,25 +426,57 @@ background-image: linear-gradient(45deg,
     box-shadow: none;
 }
 
-.contact-container {
+/* Contact Section */
+
+.contact-info {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.contact-header {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+    color: var(--white);
 }
 
 .contact-container {
     display: flex;
-  }
-  
+    justify-content: space-evenly;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contact-icon:not(:last-child) {
+    margin-right: 20px;
+}
+
+.contact-icon {
+    color: var(--white);
+    transition: all 150ms ease-in-out;
+}
+
+.contact-icon:hover {
+    color: var(--blue);
+}  
 
   
-  .fa-envelope, .fa-github, .fa-linkedin {
+  fa-envelope, .fa-github, .fa-linkedin {
     font-size: 20px;
     margin-right: 10px;
-  }
+}
   
-  a {
+a {
     color: inherit;
     text-decoration: none;
-  }
+}
 
 
 
