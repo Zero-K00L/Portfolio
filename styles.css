@@ -41,18 +41,51 @@ body {
     rgba(0,0,0,1) 100%
 );
 
-
-
-
-
-
 /* background: linear-gradient(45deg,
-#f0f0f0, #e4e4e4, #d8d8d8, #cccccc, #c0c0c0,
-#b4b4b4, #a8a8a8, #9c9c9c, #909090, #848484,
-#787878, #6c6c6c, #606060, #545454, #484848,
-#3c3c3c, #303030, #242424, #181818, #0c0c0c
+    rgba(0,0,0,1) 0%,
+    rgba(2,2,2,1) 5%,
+    rgba(4,4,4,1) 10%,
+    rgba(6,6,6,1) 15%,
+    rgba(8,8,8,1) 20%,
+    rgba(10,10,10,1) 25%,
+    rgba(12,12,12,1) 30%,
+    rgba(14,14,14,1) 35%,
+    rgba(16,16,16,1) 40%,
+    rgba(18,18,18,1) 45%,
+    rgba(20,20,20,1) 50%,
+    rgba(22,22,22,1) 55%,
+    rgba(24,24,24,1) 60%,
+    rgba(26,26,26,1) 65%,
+    rgba(28,28,28,1) 70%,
+    rgba(30,30,30,1) 75%,
+    rgba(32,32,32,1) 80%,
+    rgba(34,34,34,1) 85%,
+    rgba(36,36,36,1) 100%
 ); */
 
+/* background: linear-gradient(125deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(34, 34, 34, 1) 5%,
+    rgba(36, 36, 36, 1) 10%,
+    rgba(38, 38, 38, 1) 15%,
+    rgba(40, 40, 40, 1) 20%,
+    rgba(42, 42, 42, 1) 25%,
+    rgba(44, 44, 44, 1) 30%,
+    rgba(46, 46, 46, 1) 35%,
+    rgba(48, 48, 48, 1) 40%,
+    rgba(50, 50, 50, 1) 45%,
+    rgba(52, 52, 52, 1) 50%,
+    rgba(54, 54, 54, 1) 55%,
+    rgba(56, 56, 56, 1) 60%,
+    rgba(58, 58, 58, 1) 65%,
+    rgba(60, 60, 60, 1) 70%,
+    rgba(62, 62, 62, 1) 75%,
+    rgba(64, 64, 64, 1) 80%,
+    rgba(66, 66, 66, 1) 85%,
+    rgba(68, 68, 68, 1) 90%,
+    rgba(70, 70, 70, 1) 95%,
+    rgba(72, 72, 72, 1) 100%
+); */
 
     /* background-color: var(--darkGray); */
     border-radius: 19px;
@@ -70,11 +103,11 @@ body {
     z-index: -1;
 }
 
-.main::before {
+/* .main::before {
     top: 0;
     left: 0;
-    background: url('images/border-top.png') no-repeat bottom right; /*to expand to bottom and right*/
-}
+    background: url('images/border-top.png') no-repeat bottom right; 
+} */
 
 .main::after {
     top: 85%;
@@ -92,8 +125,9 @@ body {
 }
 
 .intro-header {
-    margin-left: 10px;
+    margin-left: 52px;
     margin-bottom: 0;
+    margin-top: -24px;
 }
 
 .intro-header-span1 {
@@ -115,6 +149,11 @@ body {
 
 .divider {
     width: 89%;
+    margin-left: 10px;
+}
+
+.divider-header {
+    width: 93%;
     margin-left: 10px;
 }
 
@@ -174,6 +213,13 @@ body {
 .tools-header {
     color: var(--gold);
     margin-right: 7px;
+}
+
+.projects-header {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+    color: var(--white);
 }
 
 
