@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <title>John Grudzinski Portfolio</title>
+  </head>
+
+  <body>
+    <main class="main">
+      <header>
+        <!-- Mobile Navigation Menu -->
+        <div id="overlay" class="overlay has-fade">
+          <div class="header-display">
+            <a class="features-mobile-header" href="#">Intro</a>
+            <img class="down-arrow1 arrow" src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
+            <ul class="features-submenu">
+              <li>
+                <img class="icon icon-1" src="images/icon-todo.svg" alt="" aria-hidden="true">
+              </li>
+              <li class="submenu-option">
+                Todo List 
+              </li>
+              <li>
+                <img class="icon icon-2" src="images/icon-calendar.svg" alt="" aria-hidden="true">
+              </li>
+              <li class="submenu-option">
+                Calendar
+              </li>
+              <li>
+                <img class="icon icon-3" src="images/icon-reminders.svg" alt="" aria-hidden="true">
+              </li>
+              <li class="submenu-option">
+                Reminders
+              </li>
+              <li>
+                <img class="icon icon-4" src="images/icon-planning.svg" alt="" aria-hidden="true">
+              </li>
+              <li class="submenu-option">
+                Planning
+              </li>
+            </ul>
+            <a class="company-mobile-header" href="#">About Me</a>
+            <img class="down-arrow2 arrow" src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
+            <ul class="company-submenu">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+            <a href="#">Careers</a>
+            <a href="#">About</a>
+          </div>
+          <div class="login-container">
+            <a class="login" href="#">Projects</a>
+            <button class="register-btn">Contact</button>
+          </div>
+        </div>
+        <div id="overlay2" class="overlay-2 has-fade2"></div>
+        <nav>
+          <img class="header-logo" src="Images/tree-logo.png" alt="" aria-hidden="true">  
+          <div class="toggle-container-desktop">
+            <input type="checkbox" class="checkbox-2" id="checkbox-2">
+            <label for="checkbox-2" class="label">
+              <span class="icon-container">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+              </span>
+              <span class="switch-2"></span>
+            </label>
+          </div>
+          <!-- Desktop Navigation Menu -->
+          <ul class="header-nav">
+            <li class="header-item">
+              <a href="#" class="header-link header-features">Features</a>
+              <img class="header-arrow header-arrow1" src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
+              <ul class="features-submenu-desktop">
+                <li>
+                  <img class="icon icon-1" src="images/icon-todo.svg" alt="" aria-hidden="true">
+                </li>
+                <li class="submenu-option feature-subItem">
+                  Todo List 
+                </li>
+                <li>
+                  <img class="icon icon-2" src="images/icon-calendar.svg" alt="" aria-hidden="true">
+                </li>
+                <li class="submenu-option feature-subItem feature-calendar">
+                  Calendar
+                </li>
+                <li>
+                  <img class="icon icon-3" src="images/icon-reminders.svg" alt="" aria-hidden="true">
+                </li>
+                <li class="submenu-option feature-subItem feature-reminder">
+                  Reminders
+                </li>
+                <li>
+                  <img class="icon icon-4" src="images/icon-planning.svg" alt="" aria-hidden="true">
+                </li>
+                <li class="submenu-option feature-subItem feature-planning">
+                  Planning
+                </li>
+              </ul>
+            </li>
+            <li class="header-item header-company">
+              <a href="#" class="header-link company-link">Company</a>
+              <img class="header-arrow header-arrow2" src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
+              <ul class="company-submenu-desktop">
+                <li class="submenu-option">History</li>
+                <li class="submenu-option">Our Team</li>
+                <li class="submenu-option">Blog</li>
+              </ul>
+            </li>
+            <li class="header-item header-careers">
+              <a href="#" class="header-link">Careers</a>
+            </li>
+            <li class="header-item header-about">
+              <a href="#" class="header-link">About</a>
+            </li>
+            <li class="header-item desktop-login">
+              <a class="header-link" href="#">Login</a>
+            </li>
+            <li class="header-item header-btn">
+              <button class="register-btn">Register</button>
+            </li>
+          </ul>
+          <div class="header-menu-container">
+            <a href="#" id="btnHamburger" class="header-menu">
+              <span class="hamburger-menu menu-line-1"></span>
+              <span class="hamburger-menu menu-line-2"></span>
+            </a>
+          </div>
+        </nav>
+      </header>
+
+      <section class="intro">
+        <div class="background-img-mobile"></div>
+        <img class="intro-img" src="images/hero-img-desktop.png">
+        <div class="intro-text-container">
+            <h1 class="intro-header"><span class="intro-header-span1">Welcome,</span> <span class="intro-header-span2">My Name is John</span></h1>
+            <p class="intro-paragraph">As a highly motivated and results-driven Junior Front-End Developer, I am passionate about bringing creative solutions to life through the design and development of user-centered websites and applications. With a solid understanding of HTML, CSS, and JavaScript, I strive to produce visually appealing and intuitive user experiences.</p>
+        </div>
+      </section>
+      <img class="divider" src="images/border-divider.png">
+
+      <section class="about-me">
+        <h2 class="about-header">Skills</h2>
+        <ul class="languages-container">
+          <li class="languages-header">Languages:</li>
+          <li>Javascipt(ES5, ES6),</li>
+          <li>Python,</li>   
+          <li>HTML5,</li> 
+          <li>CSS3</li>
+        </ul>
+        <ul class="libraries-container">
+          <li class="libraries-header">Libraries:</li>
+          <li>React</li>
+          <li>jQuery</li>
+        </ul>
+        <ul class="frameworks-container">
+          <li class="frameworks-header">Frameworks:</li>
+          <li class="">Angular</li>
+        </ul>
+        <ul class="tools-container">
+          <li class="tools-header">Tools:</li>
+          <li>Git</li>
+        </ul>
+      </section>
+      <img class="divider" src="images/border-divider.png">
+      <section class="projects">
+        
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
