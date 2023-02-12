@@ -20,13 +20,10 @@ html {
 
 body {
     margin: 0;
-    /* background-color: var(--darkGray); */
+    background-color: var(--darkGray); 
 }
 
 .main {
-/*     width: 100%;
-    max-width: 375px;
-    height: 780px; */
     width: 100vw;
     height: 100%;
     margin: 0 auto;
@@ -506,7 +503,7 @@ a {
     height: 2px;
     background-color: var(--white);
     transition: all 300ms ease-in-out;
-    transform-origin: 21% 67%;
+    transform-origin: 22% 124%;
 }
 
 .menu-line-1 {
@@ -518,7 +515,6 @@ a {
     position: relative;
     left: 2px;
 }
-
 
 .header-menu > span:not(:last-child) {
     margin-bottom: 6px;
@@ -534,14 +530,14 @@ nav {
 .header-open > span:first-child {
     transform: rotate(45deg);
     width: 20px;
-    background-color: var(--darkGray);
+    background-color: var(--white);
 }
 
 
 .header-open > span:last-child {
     transform: rotate(-45deg);
     width: 20px;
-    background-color: var(--darkGray);
+    background-color: var(--white);
 }
 
 .header-logo {
@@ -557,7 +553,7 @@ nav {
 }
 
 .intro-header {
-
+    
 }
 
 .header-nav {
@@ -570,18 +566,18 @@ nav {
 
 /* overlay for hamburger menu */
 
-.overlay {        /* whitespace for overlay menu */
+.overlay {
     display: block;
     max-width: 64.266%;
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: 0;
     position: fixed;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-color: var(--white);
     z-index: 1;
+    background-image: linear-gradient(45deg, #000000, #0c0c0c, #181818, #242424, #303030, #3c3c3c, #484848, #545454 );
 }
 
 .overlay-2 {
@@ -641,8 +637,10 @@ nav {
     padding-left: 1.625rem;
     text-decoration: none;
     font-size: 16px;
-    color: var(--gray);
+    color: var(--white);
     line-height: 0.7;
+    font-family: Merriweather,sans-serif;
+    font-weight: 700;
 }
 
 .header-display > a:not(:last-child) {
@@ -836,15 +834,16 @@ ul {
     width: 100%;
     max-width: 193px;
     height: 42px;
-    background-color: var(--white);
-    border: 2px solid var(--gray);
     border-radius: 14px;
-    font-family: Epilogue, sans-serif;
     font-size: 14px;
-    color: var(--mediumGray);
     cursor: pointer;
     transition: 150ms ease-in-out;
-    box-shadow: 0px 0px 4px var(--mediumGray);
+    box-shadow: 0px 0px 5px var(--white);
+    background: linear-gradient(to right, #776653, #847146, #917c3f, #9e8635, #aa9029 );
+    letter-spacing: 1px;
+    padding: 0;
+    border-color: var(--gold);
+    font-weight: 698;
 }
 
 .register-btn:active {
