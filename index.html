@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <title>John Grudzinski Portfolio</title>
   </head>
 
@@ -18,46 +22,28 @@
         <div id="overlay" class="overlay has-fade">
           <div class="header-display">
             <a class="features-mobile-header" href="#">Intro</a>
-            <img class="down-arrow1 arrow" src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
             <ul class="features-submenu">
-              <li>
-                <img class="icon icon-1" src="images/icon-todo.svg" alt="" aria-hidden="true">
-              </li>
               <li class="submenu-option">
                 Todo List 
-              </li>
-              <li>
-                <img class="icon icon-2" src="images/icon-calendar.svg" alt="" aria-hidden="true">
               </li>
               <li class="submenu-option">
                 Calendar
               </li>
-              <li>
-                <img class="icon icon-3" src="images/icon-reminders.svg" alt="" aria-hidden="true">
-              </li>
               <li class="submenu-option">
                 Reminders
-              </li>
-              <li>
-                <img class="icon icon-4" src="images/icon-planning.svg" alt="" aria-hidden="true">
               </li>
               <li class="submenu-option">
                 Planning
               </li>
             </ul>
-            <a class="company-mobile-header" href="#">About Me</a>
-            <img class="down-arrow2 arrow" src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
+            <a class="company-mobile-header" href="#">Skills</a>
             <ul class="company-submenu">
               <li>History</li>
               <li>Our Team</li>
               <li>Blog</li>
             </ul>
-            <a href="#">Careers</a>
-            <a href="#">About</a>
-          </div>
-          <div class="login-container">
-            <a class="login" href="#">Projects</a>
-            <button class="register-btn">Contact</button>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
           </div>
         </div>
         <div id="overlay2" class="overlay-2 has-fade2"></div>
@@ -135,14 +121,13 @@
           </div>
         </nav>
       </header>
-
       <section class="intro">
         <div class="background-img-mobile"></div>
         <img class="intro-img" src="images/hero-img-desktop.png">
         <img class="divider-header" src="images/border-top.png">
         <div class="intro-text-container">
             <h1 class="intro-header"><span class="intro-header-span1">Welcome,</span> <span class="intro-header-span2">My Name is John</span></h1>
-            <p class="intro-paragraph">As a highly motivated and results-driven Junior Front-End Developer, I am passionate about bringing creative solutions to life through the design and development of user-centered websites and applications. With a solid understanding of HTML, CSS, and JavaScript, I strive to produce visually appealing and intuitive user experiences.</p>
+            <p class="intro-paragraph">I'm a highly motivated and results-driven Junior Front-End Developer, I am passionate about bringing creative solutions to life through the design and development of user-centered websites and applications. With a solid understanding of HTML, CSS, and JavaScript, I strive to produce visually appealing and intuitive user experiences.</p>
         </div>
       </section>
       <img class="divider" src="images/border-divider.png">
@@ -158,22 +143,55 @@
         </ul>
         <ul class="libraries-container">
           <li class="libraries-header">Libraries:</li>
-          <li>React</li>
+          <li>React,</li>
           <li>jQuery</li>
         </ul>
         <ul class="frameworks-container">
           <li class="frameworks-header">Frameworks:</li>
-          <li class="">Angular</li>
+          <li class="">Angular,</li>
+          <li class="">Tailwind</li>
         </ul>
         <ul class="tools-container">
           <li class="tools-header">Tools:</li>
-          <li>Git</li>
+          <li>Git,</li>
+          <li>Adobe XD,</li>
+          <li>Photoshop</li>
         </ul>
       </section>
       <img class="divider" src="images/border-divider.png">
       <section class="projects-container">
         <h2 class="projects-header">Projects</h2>
+        <div class="project-container">
+          <div class="project">
+            <h3>Project 1</h3>
+            <a href="project1.html">
+              <img src="project1-thumbnail.jpg" alt="Project 1 Thumbnail">
+            </a>
+          </div>
+          <div class="project">
+            <h3>Project 2</h3>
+            <a href="project2.html">
+              <img src="project2-thumbnail.jpg" alt="Project 2 Thumbnail">
+            </a>
+          </div>
+          <div class="project">
+            <h3>Project 3</h3>
+            <a href="project3.html">
+              <img src="project3-thumbnail.jpg" alt="Project 3 Thumbnail">
+            </a>
+          </div>
+        </div>  
       </section>
+      <img class="divider" src="images/border-divider.png">
+
+      <footer class="contact-info">
+        <h2 class="contact-header">Contact</h2>
+        <ul class="contact-container">
+          <li><a class="contact-icon" href="mailto:johngrudzinski@yahoo.com"><i class="fas fa-envelope"></i></a></li>
+          <li><a class="contact-icon"  href="https://github.com/Zero-K00L"><i class="fab fa-github"></i></a></li>
+          <li><a class="contact-icon"  href="https://www.linkedin.com/in/john-grudzinski-960379262/"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+      </footer>
     </main>
     <script src="script.js"></script>
   </body>
