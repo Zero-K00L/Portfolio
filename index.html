@@ -21,97 +21,60 @@
         <!-- Mobile Navigation Menu -->
         <div id="overlay" class="overlay has-fade">
           <div class="header-display">
-            <a class="features-mobile-header" href="#">Intro</a>
-            <ul class="features-submenu">
-              <li class="submenu-option">
-                Todo List 
-              </li>
-              <li class="submenu-option">
-                Calendar
-              </li>
-              <li class="submenu-option">
-                Reminders
-              </li>
-              <li class="submenu-option">
-                Planning
-              </li>
-            </ul>
+            <a class="intro-mobile-header" href="#introduction">Intro</a>
             <a class="company-mobile-header" href="#">Skills</a>
-            <ul class="company-submenu">
-              <li>History</li>
-              <li>Our Team</li>
-              <li>Blog</li>
+
+            <a class="projects-submenu-header" href="#">Projects</a>
+            <ul class="projects-submenu">
+              <li class="submenu-option">
+                <a href="project1.html">Project I</a>
+              </li>
+              <li class="submenu-option">
+                <a href="project2.html">Project II</a>
+              </li>
+              <li class="submenu-option">
+                <a href="project3.html">Project III</a>
+              </li>
             </ul>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+
+
+            <a class="contact-submenu-header" href="#">Contact</a>
+            <ul class="contact-submenu">
+              <li>
+                <a class="contact-icon submenu-icon" href="mailto:johngrudzinski@yahoo.com"><i class="fas fa-envelope"></i></a>
+              </li>
+              <li><a class="contact-icon submenu-icon"  href="https://github.com/Zero-K00L"><i class="fab fa-github"></i></a>
+              </li>
+              <li><a class="contact-icon submenu-icon"  href="https://www.linkedin.com/in/john-grudzinski-960379262/"><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li><a class="contact-icon submenu-icon" href="tel:6465961649"><i class="fas fa-phone"></i></a>
+              </li>
+            </ul>
+
+
           </div>
         </div>
         <div id="overlay2" class="overlay-2 has-fade2"></div>
         <nav>
           <img class="header-logo" src="Images/tree-logo.png" alt="" aria-hidden="true">  
-          <div class="toggle-container-desktop">
-            <input type="checkbox" class="checkbox-2" id="checkbox-2">
-            <label for="checkbox-2" class="label">
-              <span class="icon-container">
-                <i class="fas fa-moon"></i>
-                <i class="fas fa-sun"></i>
-              </span>
-              <span class="switch-2"></span>
-            </label>
-          </div>
+
           <!-- Desktop Navigation Menu -->
           <ul class="header-nav">
             <li class="header-item">
-              <a href="#" class="header-link header-features">Features</a>
-              <img class="header-arrow header-arrow1" src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
-              <ul class="features-submenu-desktop">
-                <li>
-                  <img class="icon icon-1" src="images/icon-todo.svg" alt="" aria-hidden="true">
-                </li>
-                <li class="submenu-option feature-subItem">
-                  Todo List 
-                </li>
-                <li>
-                  <img class="icon icon-2" src="images/icon-calendar.svg" alt="" aria-hidden="true">
-                </li>
-                <li class="submenu-option feature-subItem feature-calendar">
-                  Calendar
-                </li>
-                <li>
-                  <img class="icon icon-3" src="images/icon-reminders.svg" alt="" aria-hidden="true">
-                </li>
-                <li class="submenu-option feature-subItem feature-reminder">
-                  Reminders
-                </li>
-                <li>
-                  <img class="icon icon-4" src="images/icon-planning.svg" alt="" aria-hidden="true">
-                </li>
-                <li class="submenu-option feature-subItem feature-planning">
-                  Planning
-                </li>
-              </ul>
+              <a href="#" class="header-link header-features">Intro</a>
+             
             </li>
             <li class="header-item header-company">
-              <a href="#" class="header-link company-link">Company</a>
-              <img class="header-arrow header-arrow2" src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
-              <ul class="company-submenu-desktop">
-                <li class="submenu-option">History</li>
-                <li class="submenu-option">Our Team</li>
-                <li class="submenu-option">Blog</li>
-              </ul>
+              <a href="#" class="header-link company-link">Skills</a>
+            
             </li>
             <li class="header-item header-careers">
-              <a href="#" class="header-link">Careers</a>
+              <a href="#" class="header-link">Projects</a>
             </li>
             <li class="header-item header-about">
-              <a href="#" class="header-link">About</a>
+              <a href="#" class="header-link">Contact</a>
             </li>
-            <li class="header-item desktop-login">
-              <a class="header-link" href="#">Login</a>
-            </li>
-            <li class="header-item header-btn">
-              <button class="register-btn">Register</button>
-            </li>
+
           </ul>
           <div class="header-menu-container">
             <a href="#" id="btnHamburger" class="header-menu">
@@ -121,41 +84,43 @@
           </div>
         </nav>
       </header>
+
       <section class="intro">
         <div class="background-img-mobile"></div>
-        <img class="intro-img" src="images/hero-img-desktop.png">
+ 
         <img class="divider-header" src="images/border-top.png">
         <div class="intro-text-container">
+<!--             <img class="intro-img" src="images/hero-img-desktop.png"> -->
             <h1 class="intro-header"><span class="intro-header-span1">Welcome,</span> <span class="intro-header-span2">My Name is John</span></h1>
-            <p class="intro-paragraph">I'm a highly motivated and results-driven Junior Front-End Developer, I am passionate about bringing creative solutions to life through the design and development of user-centered websites and applications. With a solid understanding of HTML, CSS, and JavaScript, I strive to produce visually appealing and intuitive user experiences.</p>
+            <p id="introduction" class="intro-paragraph">I'm a highly motivated and results-driven Junior Front-End Developer, I am passionate about bringing creative solutions to life through the design and development of user-centered websites and applications. With a solid understanding of HTML, CSS, and JavaScript, I strive to produce visually appealing and intuitive user experiences.</p>
         </div>
       </section>
       <img class="divider" src="images/border-divider.png">
 
-      <section class="about-me">
-        <h2 class="about-header">Skills</h2>
+      <section class="skills">
+        <h2 class="skills-header">Skills</h2>
         <ul class="languages-container">
           <li class="languages-header">Languages:</li>
-          <li>Javascipt(ES5, ES6),</li>
-          <li>Python,</li>   
-          <li>HTML5,</li> 
-          <li>CSS3</li>
+          <li class="skill-entry">Javascipt(ES5, ES6),</li>
+          <li class="skill-entry">Python,</li>   
+          <li class="skill-entry">HTML5,</li> 
+          <li class="skill-entry">CSS3</li>
         </ul>
         <ul class="libraries-container">
           <li class="libraries-header">Libraries:</li>
-          <li>React,</li>
-          <li>jQuery</li>
+          <li class="skill-entry">React,</li>
+          <li class="skill-entry">jQuery</li>
         </ul>
         <ul class="frameworks-container">
           <li class="frameworks-header">Frameworks:</li>
-          <li class="">Angular,</li>
-          <li class="">Tailwind</li>
+          <li class="skill-entry">Angular,</li>
+          <li class="skill-entry">Tailwind</li>
         </ul>
         <ul class="tools-container">
           <li class="tools-header">Tools:</li>
-          <li>Git,</li>
-          <li>Adobe XD,</li>
-          <li>Photoshop</li>
+          <li class="skill-entry">Git,</li>
+          <li class="skill-entry">Adobe XD,</li>
+          <li class="skill-entry">Photoshop</li>
         </ul>
       </section>
       <img class="divider" src="images/border-divider.png">
@@ -190,8 +155,11 @@
           <li><a class="contact-icon" href="mailto:johngrudzinski@yahoo.com"><i class="fas fa-envelope"></i></a></li>
           <li><a class="contact-icon"  href="https://github.com/Zero-K00L"><i class="fab fa-github"></i></a></li>
           <li><a class="contact-icon"  href="https://www.linkedin.com/in/john-grudzinski-960379262/"><i class="fab fa-linkedin"></i></a></li>
+          <li><a class="contact-icon" href="tel:6465961649"><i class="fas fa-phone"></i></a></li>
         </ul>
+
       </footer>
+      
     </main>
     <script src="script.js"></script>
   </body>

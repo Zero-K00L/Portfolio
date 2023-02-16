@@ -4,28 +4,28 @@ const overlayAnim = document.querySelector('#overlay');
 const overlayAnim2 = document.querySelector('#overlay2');
 const fadeElems = document.querySelectorAll('.has-fade');
 const fadeElems2 = document.querySelectorAll('.has-fade2');
-const featuresSelector = document.querySelector('.features-mobile-header');  
-const featuresSubmenu = document.querySelector('.features-submenu'); 
 
-const companySelector = document.querySelector('.company-mobile-header');
-const companySubmenu = document.querySelector('.company-submenu');
 
-// Desktop
-const featuresSubmenuDesktop = document.querySelector('.features-submenu-desktop');
-const desktopFeatures = document.querySelector('.header-features');
-const companySubmenuDesktop = document.querySelector('.company-submenu-desktop');
-const desktopCompany = document.querySelector('.company-link');
+
+const projectsMobile = document.querySelector('.projects-submenu-header');
+const projectsSubmenu = document.querySelector('.projects-submenu');
+
+const contactMobile = document.querySelector('.contact-submenu-header');
+const contactSubmenu = document.querySelector('.contact-submenu');
+
+
 
 
 btnHamburger.addEventListener('click', function() {
-    if(btnHamburger.classList.contains('header-open')) {    // close Hamburger menu 
+    if (btnHamburger.classList.contains('header-open')) {    // close Hamburger menu 
         btnHamburger.classList.remove('header-open');
-        featuresSubmenu.classList.toggle('hidden');
-        featuresSubmenu.classList.remove('show');
-
-        companySubmenu.classList.toggle('hidden');
-        companySubmenu.classList.remove('show');
-
+        contactSubmenu.classList.toggle('show');
+        if (projectsSubmenu.classList.contains('show')) {
+            projectsSubmenu.classList.toggle('show');
+        }
+        if (contactSubmenu.classList.contains('show')) {
+            contactSubmenu.classList.toggle('show');
+        }
         fadeElems.forEach(function(element){
             element.classList.remove('fade-in');
             element.classList.add('fade-out');
@@ -57,74 +57,32 @@ btnHamburger.addEventListener("click", function() {
     overlayAnim2.classList.toggle("open");
 });
 
-// Reveals the submenu for Features Mobile
 
-featuresSelector.addEventListener('click', function() {
-    if (!featuresSubmenu.classList.contains('show')) {
-        featuresSubmenu.classList.remove('hidden');
+// Reveals the submenu for Projects Mobile
 
-        featuresSubmenu.classList.toggle('show');
+projectsMobile.addEventListener('click', function() {
+    if(!projectsSubmenu.classList.contains('show')) {
+        projectsSubmenu.classList.toggle('show');
     }
     else {
-        featuresSubmenu.classList.toggle('hidden');
-        featuresSubmenu.classList.remove('show');
-
+        projectsSubmenu.classList.toggle('show');
     }
 });
+
 
 // Reveals the submenu for Company Mobile
 
-companySelector.addEventListener('click', function() {
-    if (!companySubmenu.classList.contains('show')) {
-        companySubmenu.classList.remove('hidden');
-
-        companySubmenu.classList.toggle('show');
+contactMobile.addEventListener('click', function() {
+    if(!contactSubmenu.classList.contains('show')) {
+        contactSubmenu.classList.toggle('show');
     }
     else {
-        companySubmenu.classList.toggle('hidden');
-        companySubmenu.classList.remove('show');
-
-    }
-})
-
-// Reveals the submenu for Features Desktop
-
-desktopFeatures.addEventListener('click', function() {
-    if (!featuresSubmenuDesktop.classList.contains('show')) {
-      featuresSubmenuDesktop.classList.remove('hidden');
-      featuresSubmenuDesktop.classList.toggle('show');
-      
-    } else {
-      featuresSubmenuDesktop.classList.toggle('hidden');
-      featuresSubmenuDesktop.classList.remove('show');
-    }
-});
-  
-// Reveals the submenu for Company Desktop
-
-desktopCompany.addEventListener('click', function() {
-    if (!companySubmenuDesktop.classList.contains('show')) {
-      companySubmenuDesktop.classList.remove('hidden');
-      companySubmenuDesktop.classList.toggle('show');
-    }
-    else {
-      companySubmenuDesktop.classList.toggle('hidden');
-      companySubmenuDesktop.classList.remove('show');
+        contactSubmenu.classList.toggle('show');
     }
 });
 
-// Adds pulsating effect to submenu options of Feature Menu
 
-const featureSubItems = document.querySelectorAll('.feature-subItem');
 
-featureSubItems.forEach(featureSubItem => {
-    featureSubItem.addEventListener('mouseover', function() {
-        this.previousElementSibling.classList.add('pulsate');
-    });
 
-    featureSubItem.addEventListener('mouseout', function() {
-        this.previousElementSibling.classList.remove('pulsate');
-    });
-});
 
 
