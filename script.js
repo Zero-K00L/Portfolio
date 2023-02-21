@@ -82,6 +82,24 @@ contactMobile.addEventListener('click', function() {
 });
 
 
+// Adds scrolling behavior for each section accessed by nav link. Desktop
+
+const navLinks = document.querySelectorAll('.header-link');
+
+navLinks.forEach(link => {
+    link.addEventListener('click', scrollToSection);
+});
+
+function scrollToSection(event) {
+    event.preventDefault();
+    const target = this.getAttribute('href');
+    const section = document.querySelector(target);
+    const sectionTop = section.offsetTop;
+    window.scrollTo({
+        top: sectionTop,
+        behavior: 'smooth'
+    });
+}
 
 
 

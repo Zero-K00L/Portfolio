@@ -255,7 +255,6 @@ overflow: hidden;
     color: #776653;
 }
 
-
 .intro-paragraph {
     display: block;
     margin-left: 10px;
@@ -335,17 +334,16 @@ overflow: hidden;
 }
 
 .project-container {
-    margin-left: 166px;
+
     margin-bottom: 26px;
 }
 
 
 .projects-header {
     margin-top: 10px;
-    margin-left: 188px;
+    margin-left: 10px;
     margin-bottom: 16px;
     color: var(--white);
-    font-size: 43px;
 }
 
 /* Project Styles */
@@ -879,6 +877,411 @@ ul {
 
 /* Media Queries */
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .main {
+        height: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .divider-bottom {
+        width: 89%;
+        margin-right: 12px;
+        margin-bottom: 54px;
+        height: 141%;
+    }
+
+    
+
+    .header-menu {
+        display: none;
+    }
+
+    .divider-header {
+        width: 67%;
+        margin-left: 10px;
+        height: 86px;
+    }
+
+    .header-nav {
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 0;
+        width: 100%;
+        margin-bottom: 9px;
+        margin-top: 29px;
+    }
+
+    .header-link {
+        display: inline-block;
+        color: var(--gray);
+        transition: all 150ms ease-in-out;
+        font-size: 15px;
+    }
+
+    .header-link:hover {
+        color: var(--orange);
+    }
+
+    .intro {
+        width: 81%;
+        display: inline-block; 
+    }
+
+    .intro-text-container {
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-family: 'Oswald', sans-serif;
+        width: 46%;
+        margin-left: 117px;
+        margin-right: 0;
+    }
+
+    .intro-header {
+        margin-left: 11px;
+        margin-bottom: 0;
+        margin-top: -24px;
+    }
+
+    .intro-header-span1 {
+        font-size: 35px;
+    }
+
+    .intro-header-span2 {
+        font-size: 35px;
+    }
+
+    .intro-paragraph {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .intro-img {
+        display: inline-block;
+    }
+
+    .main::after {
+        content: '';
+        background-repeat: no-repeat;
+        width: 52%;
+        height: 100%;
+        position: absolute;
+        top: 19%;
+        left: 48%;
+        overflow: hidden;
+        display: inline-block;
+        background-image: url(images/hero-img-desktop.png);
+        background-size: contain;
+    }
+
+    .main::before {
+        content: '';
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        background-image: url(images/border-bottom-reversed.png);
+        position: absolute;
+        top: 79%;
+        left: 9%;
+
+    }
+
+    .divider {
+        width: 20%;
+        margin-left: 133px;
+    }
+
+    .divider:first-of-type {
+        margin-left: 127px;
+    }
+
+    .divider:last-of-type {
+        display: block;
+        margin-bottom: 11px;
+    }
+
+    .divider-header {
+        width: 104%;
+        margin-left: 10px;
+        height: 86px;
+    }
+
+    .skills-header {
+        font-size: 30px;
+    }
+
+    .skill-entry {
+        font-size: 15px;
+    }
+
+    .skills {
+        margin-left: 178px;
+        font-size: 20px;
+    }
+
+    .projects-header {
+        margin-top: 10px;
+        margin-left: 188px;
+        margin-bottom: 16px;
+        color: var(--white);
+        font-size: 30px;
+    }
+
+    .project-container {
+        margin-left: 166px;
+        width: 50%;
+    }
+
+    .contact-header {
+        font-size: 30px;
+        margin-left: 189px;
+        margin-top: 0;
+        margin-bottom: 13px;
+    }
+
+    .divider {
+        margin-left: 188px;
+    }
+
+    .contact-info {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .contact-container {
+        left: 0px;
+        margin-top: 0;
+        margin-left: 189px;
+        justify-content: flex-start;
+    }
+    .contact-container > li:not(:last-child) {
+        margin-right: 197px;
+    }
+
+    .divider-header {
+        width: 105%;
+    }
+
+    .divider-bottom {
+        display: inline-block;
+    }
+
+    .languages-header, .libraries-header, .frameworks-header, .tools-header {
+        font-family: 'Merriweather', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .contact-icon {
+        color: var(--gray);
+    }
+} 
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .main {
+        height: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .divider-bottom {
+        width: 89%;
+        margin-right: 12px;
+        margin-bottom: 54px;
+        height: 141%;
+    }
+
+    
+
+    .header-menu {
+        display: none;
+    }
+
+    .divider-header {
+        width: 67%;
+        margin-left: 10px;
+        height: 86px;
+    }
+
+    .header-nav {
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 0;
+        width: 100%;
+        margin-bottom: 9px;
+        margin-top: 29px;
+    }
+
+    .header-link {
+        display: inline-block;
+        color: var(--gray);
+        transition: all 150ms ease-in-out;
+        font-size: 16px;
+    }
+
+    .header-link:hover {
+        color: var(--orange);
+    }
+
+    .intro {
+        width: 81%;
+        display: inline-block; 
+    }
+
+    .intro-text-container {
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-family: 'Oswald', sans-serif;
+        width: 46%;
+        margin-left: 117px;
+        margin-right: 0;
+    }
+
+    .intro-header {
+        margin-left: 11px;
+        margin-bottom: 0;
+        margin-top: -24px;
+    }
+
+    .intro-header-span1 {
+        font-size: 45px;
+    }
+
+    .intro-header-span2 {
+        font-size: 45px;
+    }
+
+    .intro-paragraph {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .intro-img {
+        display: inline-block;
+    }
+
+    .main::after {
+        content: '';
+        background-repeat: no-repeat;
+        width: 46%;
+        height: 100%;
+        position: absolute;
+        top: 13%;
+        left: 54%;
+        overflow: hidden;
+        display: inline-block;
+        background-image: url(images/hero-img-desktop.png);
+        background-size: contain;
+    }
+
+    .main::before {
+        content: '';
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        background-image: url(images/border-bottom-reversed.png);
+        position: absolute;
+        top: 79%;
+        left: 9%;
+
+    }
+
+    .divider {
+        width: 20%;
+        margin-left: 133px;
+    }
+
+    .divider:first-of-type {
+        margin-left: 127px;
+    }
+
+    .divider:last-of-type {
+        display: block;
+        margin-bottom: 11px;
+    }
+
+    .divider-header {
+        width: 104%;
+        margin-left: 10px;
+        height: 86px;
+    }
+
+    .skills-header {
+        font-size: 40px;
+    }
+
+    .skills {
+        margin-left: 178px;
+        font-size: 20px;
+    }
+
+    .skill-entry {
+        font-size: 20px;
+    }
+
+    .projects-header {
+        font-size: 40px;
+    }
+
+    .project-container {
+        width: 50%;
+    }
+
+    .contact-header {
+        font-size: 40px;
+        margin-left: 189px;
+        margin-top: 0;
+        margin-bottom: 13px;
+    }
+
+    .divider {
+        margin-left: 188px;
+    }
+
+    .contact-info {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .contact-container {
+        left: 0px;
+        margin-top: 0;
+        margin-left: 189px;
+        justify-content: flex-start;
+    }
+    .contact-container > li:not(:last-child) {
+        margin-right: 197px;
+    }
+
+    .divider-header {
+        width: 105%;
+    }
+
+    .divider-bottom {
+        display: inline-block;
+    }
+
+    .languages-header, .libraries-header, .frameworks-header, .tools-header {
+        font-family: 'Merriweather', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .contact-icon {
+        color: var(--gray);
+    }
+}
+
 /* Very Large devices (laptops/desktops, 1440px and up) */
 @media only screen and (min-width: 1440px) {
     .main {
@@ -939,6 +1342,7 @@ ul {
         width: 46%;
         margin-left: 117px;
         margin-right: 0;
+        scroll-padding-top: 20px;
     }
 
     .intro-header {
@@ -972,7 +1376,7 @@ ul {
         height: 100%;
         position: absolute;
         top: 13%;
-        left: 20%;
+        left: 54%;
         overflow: hidden;
         display: inline-block;
         background-image: url(images/hero-img-desktop.png);
@@ -1076,6 +1480,8 @@ ul {
 
 /* Very Large devices (laptops/desktops, 1920px and up) */
 @media only screen and (min-width: 1920px) {
+
+
     .main::after {
         content: '';
         background-repeat: no-repeat;
@@ -1145,6 +1551,10 @@ ul {
       
     .contact-container {
         margin-left: 209px;
+    }
+
+    .header-link {
+        font-weight: 700;
     }
 
     
