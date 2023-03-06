@@ -558,6 +558,10 @@ overflow: hidden;
     font-size: 20px;
     margin-right: 10px;
 }
+
+.icon-label {
+    display: none;
+}
   
 a {
     color: inherit;
