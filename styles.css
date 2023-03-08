@@ -1116,6 +1116,10 @@ ul {
         font-weight: 400;
         margin-left: 5px;
     }
+
+    .icon-label {
+        display: inline-block;
+    }
 } 
 
 
@@ -1284,7 +1288,16 @@ ul {
 
     .project-container {
         width: 50%;
-        margin-left: 103px;
+        margin-left: 122px;
+        justify-content: left;
+    }
+
+    .project-container > div:not(:last-of-type) {
+        margin-right: 50px;
+    }
+
+    .project {
+        width: 24%;
     }
 
     .contact-header {
@@ -1423,7 +1436,7 @@ ul {
         font-size: 18px;
         font-weight: 400;
         line-height: 1.5;
-        margin-left: 8px;
+        margin-left: 29px;
     }
 
     .intro-img {
@@ -1481,8 +1494,6 @@ ul {
         margin-left: 17px;
     }
 
-
-
     .skills {
         margin-left: 125px;
         font-size: 20px;
@@ -1495,7 +1506,11 @@ ul {
 
     .project-container {
         width: 50%;
-        margin-left: 92px;
+        margin-left: 136px;
+    }
+
+    .project-container > div:not(:last-of-type) {
+        margin-right: 50px;
     }
 
     .project {
@@ -1585,7 +1600,7 @@ ul {
 
 
     .main {
-        height: 100vh;
+        height: 100%;
         max-width: 100%;
         overflow-x: hidden;
     }
@@ -1666,7 +1681,7 @@ ul {
         font-size: 18px;
         font-weight: 400;
         line-height: 1.5;
-        margin-left: 53px;
+        margin-left: 73px;
     }
 
     .intro-img {
@@ -1736,7 +1751,7 @@ ul {
 
     .project-container {
         width: 50%;
-        margin-left: 125px;
+        margin-left: 184px;
     }
 
     .project {
