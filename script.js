@@ -4,17 +4,10 @@ const overlayAnim = document.querySelector('#overlay');
 const overlayAnim2 = document.querySelector('#overlay2');
 const fadeElems = document.querySelectorAll('.has-fade');
 const fadeElems2 = document.querySelectorAll('.has-fade2');
-
-
-
 const projectsMobile = document.querySelector('.projects-submenu-header');
 const projectsSubmenu = document.querySelector('.projects-submenu');
-
 const contactMobile = document.querySelector('.contact-submenu-header');
 const contactSubmenu = document.querySelector('.contact-submenu');
-
-
-
 
 btnHamburger.addEventListener('click', function() {
     if (btnHamburger.classList.contains('header-open')) {    // close Hamburger menu 
@@ -57,7 +50,6 @@ btnHamburger.addEventListener("click", function() {
     overlayAnim2.classList.toggle("open");
 });
 
-
 // Reveals the submenu for Projects Mobile
 
 projectsMobile.addEventListener('click', function() {
@@ -69,7 +61,6 @@ projectsMobile.addEventListener('click', function() {
     }
 });
 
-
 // Reveals the submenu for Company Mobile
 
 contactMobile.addEventListener('click', function() {
@@ -80,7 +71,6 @@ contactMobile.addEventListener('click', function() {
         contactSubmenu.classList.toggle('show');
     }
 });
-
 
 // Adds scrolling behavior for each section accessed by nav link. Desktop
 
