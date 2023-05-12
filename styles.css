@@ -264,6 +264,24 @@ body {
     z-index: 2;
 }
 
+.project > a {
+    position: relative;
+    z-index: 2;
+}
+
+.project > a:hover {
+    color: var(--orange);
+    font-weight: 700;
+}
+
+.project-1 {
+    background-image: url('images/IntroPageThumbnail.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
 .project:hover {
     border: 2px solid var(--orange);
     animation: pulsate 1s ease-in-out infinite;
@@ -1634,6 +1652,7 @@ ul {
 
     .project {
         width: 25%;
+        height: 7vw
     }
 
     .contact-header {
