@@ -275,12 +275,22 @@ body {
 }
 
 .project-1 {
-    background-image: url('images/IntroPageThumbnail.PNG');
+    background-image: url('images/EasyBankLPThumbnail.PNG');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.project-2 {
+    background-image: url('Images/IntroPageThumbnail.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.project-3 {
+    background-image: url('images/E-commerceThumbnail.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .project:hover {
     border: 2px solid var(--orange);
@@ -786,6 +796,10 @@ ul {
         padding-right: 0px;
     }
 
+    .project {
+        height: 10vw;
+    }
+
     .contact-header {
         margin-left: 95px;
         font-size: 45px;
@@ -808,6 +822,8 @@ ul {
     .contact-info {
         margin-bottom: 40px;
     }
+
+
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -968,12 +984,12 @@ ul {
     }
 
     .project-container {
-        margin-left: 47px;
+        margin-left: 84px;
         width: 50%;
     }
 
     .project {
-        width: 15%;
+        width: 25%;
     }
 
     .contact-header {
@@ -1200,6 +1216,7 @@ ul {
 
     .project {
         width: 24%;
+        height: 7vw;
     }
 
     .contact-header {
@@ -1415,6 +1432,7 @@ ul {
 
     .project {
         width: 25%;
+        height: 7vw;
     }
 
     .contact-header {
@@ -1496,7 +1514,7 @@ ul {
 /* Very Large devices (laptops/desktops, 1920px and up) */
 @media only screen and (min-width: 1920px) {
     .main {
-        height: 100vh;
+        height: 100%;
         max-width: 100%;
         overflow-x: hidden;
     }
