@@ -265,14 +265,19 @@ body {
     z-index: 2;
 }
 
-.project > a {
+.project > p {
     position: relative;
     z-index: 2;
 }
 
-.project > a:hover {
+.project > p:hover {
     color: var(--orange);
     font-weight: 700;
+    text-shadow:
+	    -1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 .project-1 {
@@ -1211,7 +1216,7 @@ ul {
         justify-content: left;
     }
 
-    .project-container > div:not(:last-of-type) {
+    .project-container > a:not(:last-of-type) {
         margin-right: 50px;
     }
 
@@ -1427,7 +1432,7 @@ ul {
         margin-left: 136px;
     }
 
-    .project-container > div:not(:last-of-type) {
+    .project-container > a:not(:last-of-type) {
         margin-right: 50px;
     }
 
