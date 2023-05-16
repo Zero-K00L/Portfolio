@@ -12,7 +12,6 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
-    font-family: Oswald, sans-serif;
 }
 
 *, *::before, *::after {
@@ -53,7 +52,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Karla', sans-serif;
 }
 
 .intro-header {
@@ -382,7 +381,7 @@ body {
     margin-bottom: 0px;
     padding-top: 6px;
     flex-direction: column;
-    font-family: 'Merriweather', 'sans-serif';
+    font-family: 'Karla', sans-serif;
     font-size: 15px;
 }
 
@@ -570,7 +569,7 @@ nav {
     font-size: 16px;
     color: var(--white);
     line-height: 0.7;
-    font-family: Merriweather,sans-serif;
+    font-family: 'Karla', sans-serif;
     font-weight: 700;
 }
 
@@ -640,7 +639,7 @@ ul {
     color: var(--gold);
     cursor: pointer;
     font-size: 15px;
-    font-family: Merriweather, sans-serif;
+    font-family: 'Karla', sans-serif;
     font-weight: 700;
 }
 
@@ -891,7 +890,7 @@ ul {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        font-family: 'Oswald', sans-serif;
+        font-family: 'Karla', sans-serif;
         width: 46%;
         margin-left: 117px;
         margin-right: 0;
@@ -1030,7 +1029,7 @@ ul {
     }
 
     .languages-header, .libraries-header, .frameworks-header, .tools-header {
-        font-family: 'Merriweather', sans-serif;
+        font-family: 'Karla', sans-serif;
         font-weight: 700;
         font-size: 16px;
         margin-left: 1px;
@@ -1047,6 +1046,7 @@ ul {
 
     .icon-label {
         display: inline-block;
+        font-family: 'Karla', sans-serif; 
     }
 } 
 
@@ -1109,7 +1109,7 @@ ul {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        font-family: 'Oswald', sans-serif;
+        font-family: 'Karla', sans-serif;
         width: 46%;
         margin-left: 117px;
         margin-right: 0;
@@ -1260,7 +1260,7 @@ ul {
     }
 
     .languages-header, .libraries-header, .frameworks-header, .tools-header {
-        font-family: 'Merriweather', sans-serif;
+        font-family: 'Karla', sans-serif;
         font-weight: 700;
         font-size: 20px;
     }
