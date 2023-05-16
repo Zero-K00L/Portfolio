@@ -23,6 +23,7 @@ body {
     margin: 0;
     background: linear-gradient(45deg, rgb(18, 18, 18), var(--darkGray) 100%);
     font-family: 'Karla', sans-serif;
+    height: 100%;
 }
 
 .main {
