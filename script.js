@@ -4,6 +4,12 @@ const overlayAnim = document.querySelector('#overlay');
 const overlayAnim2 = document.querySelector('#overlay2');
 const fadeElems = document.querySelectorAll('.has-fade');
 const fadeElems2 = document.querySelectorAll('.has-fade2');
+
+const introMobile = document.querySelector('.intro-mobile-header');
+const introSubmenu = document.querySelector('.intro-submenu');
+
+const skillsMobile = document.querySelector('.skills-mobile-header');
+const skillsSubmenu = document.querySelector('.skills-submenu');
 const projectsMobile = document.querySelector('.projects-submenu-header');
 const projectsSubmenu = document.querySelector('.projects-submenu');
 const contactMobile = document.querySelector('.contact-submenu-header');
@@ -13,6 +19,12 @@ btnHamburger.addEventListener('click', function() {
     if (btnHamburger.classList.contains('header-open')) {    // close Hamburger menu 
         btnHamburger.classList.remove('header-open');
         contactSubmenu.classList.toggle('show');
+        if (introSubmenu.classList.contains('show')) {
+            introSubmenu.classList.toggle('show');
+        }
+        if (skillsSubmenu.classList.contains('show')) {
+            skillsSubmenu.classList.toggle('show');
+        }
         if (projectsSubmenu.classList.contains('show')) {
             projectsSubmenu.classList.toggle('show');
         }
@@ -48,6 +60,28 @@ btnHamburger.addEventListener('click', function() {
 btnHamburger.addEventListener("click", function() {
     overlayAnim.classList.toggle("open");
     overlayAnim2.classList.toggle("open");
+});
+
+// Reveals the submenu for Intro Mobile
+
+introMobile.addEventListener('click', function() {
+    if(!introSubmenu.classList.contains('show')) {
+        introSubmenu.classList.toggle('show');
+    }
+    else {
+        introSubmenu.classList.toggle('show');
+    }
+});
+
+// Reveals the submenu for Skills Mobile
+
+skillsMobile.addEventListener('click', function() {
+    if(!skillsSubmenu.classList.contains('show')) {
+        skillsSubmenu.classList.toggle('show');
+    }
+    else {
+        skillsSubmenu.classList.toggle('show');
+    }
 });
 
 // Reveals the submenu for Projects Mobile
