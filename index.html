@@ -164,12 +164,25 @@
       <footer id="contact" class="contact-info">
         <h2 class="contact-header">Contact</h2>
         <ul class="contact-container">
-          <li><a class="contact-icon" href="mailto:johngrudzinski@yahoo.com"><i class="fas fa-envelope"><span class="email-label icon-label">johngrudzinski@yahoo.com</span></i></a></li>
           <li><a class="contact-icon"  href="https://github.com/Zero-K00L?tab=repositories"><i class="fab fa-github"> <span class="icon-label">Github</span></i></a></li>
           <li><a class="contact-icon"  href="https://www.linkedin.com/in/john-grudzinski-960379262/"><i class="fab fa-linkedin"><span class="icon-label">LinkedIn</span></i></a></li>
-          <li><a class="contact-icon" href="tel:6465961649"><i class="fas fa-phone"><span class="phone-label icon-label">(646) 596-1649</span></i></a></li>
         </ul>
       </footer>
+      <form id="contact-form" action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button class="submitBtn" type="submit">Submit</button>
+      </form>
     </main>
     <script src="script.js"></script>
   </body>
