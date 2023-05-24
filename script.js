@@ -127,7 +127,7 @@ function scrollToSection(event) {
 
 // Display an alert with the form data when the form is submitted
 
-/* const form = document.getElementById('contact-form');
+const form = document.getElementById('contact-form');
 
 form.addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent form submission
@@ -141,4 +141,4 @@ form.addEventListener('submit', function(event) {
   alert(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
 
   // Optionally, you can send the form data to a server using AJAX or fetch API
-}); */
+});
